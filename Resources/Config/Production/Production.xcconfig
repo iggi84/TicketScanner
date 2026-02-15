@@ -1,0 +1,12 @@
+//
+//  Production.xcconfig
+//  TEG Ticket App
+//
+//  Created by Igor  Vojinovic on 15/02/2026.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+BASE_URL = https:/$()/ignition.qa.ticketek.net
+API_KEY = TEq5Mddna23xSNsoDeYt8aP02BJHrvoa6X07nEuD
+API_AUTH = Basic Yhd9X=38D88!

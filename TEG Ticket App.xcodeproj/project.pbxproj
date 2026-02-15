@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F07B7672F416A8400CE1C32 /* TEG_Ticket_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7662F416A8400CE1C32 /* TEG_Ticket_AppApp.swift */; };
+		3F07B7692F416A8400CE1C32 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7682F416A8400CE1C32 /* RootView.swift */; };
+		3F07B76B2F416A8600CE1C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F07B76A2F416A8600CE1C32 /* Assets.xcassets */; };
+		3F07B7792F416C2D00CE1C32 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7782F416C2A00CE1C32 /* AppConfig.swift */; };
+		3F07B77D2F416CC900CE1C32 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3F07B77C2F416CC900CE1C32 /* Production.xcconfig */; };
+		3F07B7922F417A9100CE1C32 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B78E2F41797600CE1C32 /* ViewState.swift */; };
+		3F07B7932F417A9800CE1C32 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7902F417A3900CE1C32 /* AppFlow.swift */; };
+		3F07B7942F417A9E00CE1C32 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7912F417A6600CE1C32 /* AppRouter.swift */; };
+		3F07B7952F417AA900CE1C32 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7832F41714900CE1C32 /* NetworkManager.swift */; };
+		3F07B7962F417AAE00CE1C32 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7822F416E6A00CE1C32 /* NetworkError.swift */; };
+		3F07B7972F417AB400CE1C32 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7812F416E2C00CE1C32 /* ApiEndpoint.swift */; };
+		3F07B7982F417ABA00CE1C32 /* TicketekEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7852F41720200CE1C32 /* TicketekEndpoint.swift */; };
+		3F07B7992F417AC100CE1C32 /* ScanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B78B2F4177BA00CE1C32 /* ScanResponse.swift */; };
+		3F07B79A2F417AC600CE1C32 /* Gate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B78A2F41779600CE1C32 /* Gate.swift */; };
+		3F07B79B2F417ACC00CE1C32 /* PaxLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7892F41777A00CE1C32 /* PaxLocation.swift */; };
+		3F07B79C2F417AD100CE1C32 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7882F41774E00CE1C32 /* Venue.swift */; };
+		3F07B79D2F417AD600CE1C32 /* VenuesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7872F41772200CE1C32 /* VenuesResponse.swift */; };
+		3F07B79E2F417ADC00CE1C32 /* VenueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B78D2F41780500CE1C32 /* VenueRepository.swift */; };
+		3F07B7A12F417B4200CE1C32 /* CGFloat+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7A02F417B4000CE1C32 /* CGFloat+Layout.swift */; };
+		3F07B7A42F417DC900CE1C32 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7A32F417DC800CE1C32 /* LocationService.swift */; };
+		3F07B7A82F4180C200CE1C32 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7A72F4180BB00CE1C32 /* BarcodeScannerView.swift */; };
+		3F07B7AC2F41822400CE1C32 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7AB2F41821B00CE1C32 /* SplashView.swift */; };
+		3F07B7AF2F4182A100CE1C32 /* LocationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7AE2F4182A000CE1C32 /* LocationPermissionView.swift */; };
+		3F07B7B22F41830100CE1C32 /* VenueListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7B12F4182F500CE1C32 /* VenueListViewModel.swift */; };
+		3F07B7B62F41832700CE1C32 /* VenueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7B52F41832000CE1C32 /* VenueListView.swift */; };
+		3F07B7BB2F4183D200CE1C32 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7BA2F4183C500CE1C32 /* ScannerViewModel.swift */; };
+		3F07B7BD2F41841700CE1C32 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7BC2F41840C00CE1C32 /* ScannerView.swift */; };
+		3F07B7C12F4192D300CE1C32 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F07B7C02F4192D300CE1C32 /* Launch Screen.storyboard */; };
+		3F07B7C32F4199D400CE1C32 /* VenueRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07B7C22F4199D400CE1C32 /* VenueRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F07B7632F416A8400CE1C32 /* TEG Ticket App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TEG Ticket App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F07B7662F416A8400CE1C32 /* TEG_Ticket_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEG_Ticket_AppApp.swift; sourceTree = "<group>"; };
+		3F07B7682F416A8400CE1C32 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		3F07B76A2F416A8600CE1C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F07B7782F416C2A00CE1C32 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		3F07B77C2F416CC900CE1C32 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		3F07B77E2F416D3400CE1C32 /* TEG-Ticket-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TEG-Ticket-App-Info.plist"; path = "Resources/TEG-Ticket-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3F07B7812F416E2C00CE1C32 /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
+		3F07B7822F416E6A00CE1C32 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		3F07B7832F41714900CE1C32 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3F07B7852F41720200CE1C32 /* TicketekEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketekEndpoint.swift; sourceTree = "<group>"; };
+		3F07B7872F41772200CE1C32 /* VenuesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesResponse.swift; sourceTree = "<group>"; };
+		3F07B7882F41774E00CE1C32 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		3F07B7892F41777A00CE1C32 /* PaxLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaxLocation.swift; sourceTree = "<group>"; };
+		3F07B78A2F41779600CE1C32 /* Gate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gate.swift; sourceTree = "<group>"; };
+		3F07B78B2F4177BA00CE1C32 /* ScanResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResponse.swift; sourceTree = "<group>"; };
+		3F07B78D2F41780500CE1C32 /* VenueRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueRepository.swift; sourceTree = "<group>"; };
+		3F07B78E2F41797600CE1C32 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		3F07B7902F417A3900CE1C32 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		3F07B7912F417A6600CE1C32 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		3F07B7A02F417B4000CE1C32 /* CGFloat+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Layout.swift"; sourceTree = "<group>"; };
+		3F07B7A32F417DC800CE1C32 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		3F07B7A72F4180BB00CE1C32 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
+		3F07B7AB2F41821B00CE1C32 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		3F07B7AE2F4182A000CE1C32 /* LocationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionView.swift; sourceTree = "<group>"; };
+		3F07B7B12F4182F500CE1C32 /* VenueListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListViewModel.swift; sourceTree = "<group>"; };
+		3F07B7B52F41832000CE1C32 /* VenueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListView.swift; sourceTree = "<group>"; };
+		3F07B7BA2F4183C500CE1C32 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
+		3F07B7BC2F41840C00CE1C32 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		3F07B7C02F4192D300CE1C32 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		3F07B7C22F4199D400CE1C32 /* VenueRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F07B7602F416A8400CE1C32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F07B75A2F416A8400CE1C32 = {
+			isa = PBXGroup;
+			children = (
+				3F07B7712F416B0C00CE1C32 /* App */,
+				3F07B7772F416B5500CE1C32 /* Core */,
+				3F07B7762F416B4C00CE1C32 /* Features */,
+				3F07B7752F416B4400CE1C32 /* Shared */,
+				3F07B7742F416B3A00CE1C32 /* Services */,
+				3F07B7732F416B2A00CE1C32 /* Resources */,
+				3F07B7722F416B1E00CE1C32 /* Utils */,
+				3F07B7642F416A8400CE1C32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F07B7642F416A8400CE1C32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7632F416A8400CE1C32 /* TEG Ticket App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F07B7712F416B0C00CE1C32 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7662F416A8400CE1C32 /* TEG_Ticket_AppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3F07B7722F416B1E00CE1C32 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3F07B7732F416B2A00CE1C32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B77E2F416D3400CE1C32 /* TEG-Ticket-App-Info.plist */,
+				3F07B77A2F416C4A00CE1C32 /* Config */,
+				3F07B76A2F416A8600CE1C32 /* Assets.xcassets */,
+				3F07B7C02F4192D300CE1C32 /* Launch Screen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3F07B7742F416B3A00CE1C32 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3F07B7752F416B4400CE1C32 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B79F2F417B3800CE1C32 /* Extensions */,
+				3F07B78F2F417A2900CE1C32 /* Navigation */,
+				3F07B78E2F41797600CE1C32 /* ViewState.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3F07B7762F416B4C00CE1C32 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7A92F4181DD00CE1C32 /* StartUp */,
+				3F07B7AA2F41820500CE1C32 /* Splash */,
+				3F07B7AD2F41826100CE1C32 /* LocationPermission */,
+				3F07B7B02F4182E500CE1C32 /* VenueList */,
+				3F07B7B72F41839F00CE1C32 /* BarCodeScanner */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3F07B7772F416B5500CE1C32 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7A22F417DC200CE1C32 /* Services */,
+				3F07B78C2F4177FA00CE1C32 /* Repositories */,
+				3F07B7862F41771B00CE1C32 /* Models */,
+				3F07B7842F4171FA00CE1C32 /* Endpoints */,
+				3F07B7802F416E2300CE1C32 /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3F07B77A2F416C4A00CE1C32 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B77B2F416C6100CE1C32 /* Production */,
+				3F07B7782F416C2A00CE1C32 /* AppConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		3F07B77B2F416C6100CE1C32 /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B77C2F416CC900CE1C32 /* Production.xcconfig */,
+			);
+			path = Production;
+			sourceTree = "<group>";
+		};
+		3F07B7802F416E2300CE1C32 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7832F41714900CE1C32 /* NetworkManager.swift */,
+				3F07B7822F416E6A00CE1C32 /* NetworkError.swift */,
+				3F07B7812F416E2C00CE1C32 /* ApiEndpoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3F07B7842F4171FA00CE1C32 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7852F41720200CE1C32 /* TicketekEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		3F07B7862F41771B00CE1C32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B78B2F4177BA00CE1C32 /* ScanResponse.swift */,
+				3F07B78A2F41779600CE1C32 /* Gate.swift */,
+				3F07B7892F41777A00CE1C32 /* PaxLocation.swift */,
+				3F07B7882F41774E00CE1C32 /* Venue.swift */,
+				3F07B7872F41772200CE1C32 /* VenuesResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3F07B78C2F4177FA00CE1C32 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B78D2F41780500CE1C32 /* VenueRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3F07B78F2F417A2900CE1C32 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7912F417A6600CE1C32 /* AppRouter.swift */,
+				3F07B7902F417A3900CE1C32 /* AppFlow.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		3F07B79F2F417B3800CE1C32 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7A02F417B4000CE1C32 /* CGFloat+Layout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3F07B7A22F417DC200CE1C32 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7A72F4180BB00CE1C32 /* BarcodeScannerView.swift */,
+				3F07B7A32F417DC800CE1C32 /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3F07B7A92F4181DD00CE1C32 /* StartUp */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7682F416A8400CE1C32 /* RootView.swift */,
+			);
+			path = StartUp;
+			sourceTree = "<group>";
+		};
+		3F07B7AA2F41820500CE1C32 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7AB2F41821B00CE1C32 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		3F07B7AD2F41826100CE1C32 /* LocationPermission */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7AE2F4182A000CE1C32 /* LocationPermissionView.swift */,
+			);
+			path = LocationPermission;
+			sourceTree = "<group>";
+		};
+		3F07B7B02F4182E500CE1C32 /* VenueList */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7B42F41831200CE1C32 /* View */,
+				3F07B7B32F41830400CE1C32 /* ViewModel */,
+			);
+			path = VenueList;
+			sourceTree = "<group>";
+		};
+		3F07B7B32F41830400CE1C32 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7B12F4182F500CE1C32 /* VenueListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F07B7B42F41831200CE1C32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7B52F41832000CE1C32 /* VenueListView.swift */,
+				3F07B7C22F4199D400CE1C32 /* VenueRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F07B7B72F41839F00CE1C32 /* BarCodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7B92F4183B600CE1C32 /* View */,
+				3F07B7B82F4183AE00CE1C32 /* ViewModel */,
+			);
+			path = BarCodeScanner;
+			sourceTree = "<group>";
+		};
+		3F07B7B82F4183AE00CE1C32 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7BA2F4183C500CE1C32 /* ScannerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F07B7B92F4183B600CE1C32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F07B7BC2F41840C00CE1C32 /* ScannerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F07B7622F416A8400CE1C32 /* TEG Ticket App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F07B76E2F416A8600CE1C32 /* Build configuration list for PBXNativeTarget "TEG Ticket App" */;
+			buildPhases = (
+				3F07B75F2F416A8400CE1C32 /* Sources */,
+				3F07B7602F416A8400CE1C32 /* Frameworks */,
+				3F07B7612F416A8400CE1C32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TEG Ticket App";
+			packageProductDependencies = (
+			);
+			productName = "TEG Ticket App";
+			productReference = 3F07B7632F416A8400CE1C32 /* TEG Ticket App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F07B75B2F416A8400CE1C32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					3F07B7622F416A8400CE1C32 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+				};
+			};
+			buildConfigurationList = 3F07B75E2F416A8400CE1C32 /* Build configuration list for PBXProject "TEG Ticket App" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F07B75A2F416A8400CE1C32;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3F07B7642F416A8400CE1C32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F07B7622F416A8400CE1C32 /* TEG Ticket App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F07B7612F416A8400CE1C32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F07B7C12F4192D300CE1C32 /* Launch Screen.storyboard in Resources */,
+				3F07B76B2F416A8600CE1C32 /* Assets.xcassets in Resources */,
+				3F07B77D2F416CC900CE1C32 /* Production.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F07B75F2F416A8400CE1C32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F07B7992F417AC100CE1C32 /* ScanResponse.swift in Sources */,
+				3F07B7AF2F4182A100CE1C32 /* LocationPermissionView.swift in Sources */,
+				3F07B7792F416C2D00CE1C32 /* AppConfig.swift in Sources */,
+				3F07B7962F417AAE00CE1C32 /* NetworkError.swift in Sources */,
+				3F07B79E2F417ADC00CE1C32 /* VenueRepository.swift in Sources */,
+				3F07B7B62F41832700CE1C32 /* VenueListView.swift in Sources */,
+				3F07B79C2F417AD100CE1C32 /* Venue.swift in Sources */,
+				3F07B7BB2F4183D200CE1C32 /* ScannerViewModel.swift in Sources */,
+				3F07B79B2F417ACC00CE1C32 /* PaxLocation.swift in Sources */,
+				3F07B7692F416A8400CE1C32 /* RootView.swift in Sources */,
+				3F07B7B22F41830100CE1C32 /* VenueListViewModel.swift in Sources */,
+				3F07B79D2F417AD600CE1C32 /* VenuesResponse.swift in Sources */,
+				3F07B7C32F4199D400CE1C32 /* VenueRow.swift in Sources */,
+				3F07B7942F417A9E00CE1C32 /* AppRouter.swift in Sources */,
+				3F07B7982F417ABA00CE1C32 /* TicketekEndpoint.swift in Sources */,
+				3F07B7952F417AA900CE1C32 /* NetworkManager.swift in Sources */,
+				3F07B7A82F4180C200CE1C32 /* BarcodeScannerView.swift in Sources */,
+				3F07B7A12F417B4200CE1C32 /* CGFloat+Layout.swift in Sources */,
+				3F07B7922F417A9100CE1C32 /* ViewState.swift in Sources */,
+				3F07B7932F417A9800CE1C32 /* AppFlow.swift in Sources */,
+				3F07B7672F416A8400CE1C32 /* TEG_Ticket_AppApp.swift in Sources */,
+				3F07B79A2F417AC600CE1C32 /* Gate.swift in Sources */,
+				3F07B7AC2F41822400CE1C32 /* SplashView.swift in Sources */,
+				3F07B7A42F417DC900CE1C32 /* LocationService.swift in Sources */,
+				3F07B7972F417AB400CE1C32 /* ApiEndpoint.swift in Sources */,
+				3F07B7BD2F41841700CE1C32 /* ScannerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3F07B76C2F416A8600CE1C32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4F7AV38H34;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F07B76D2F416A8600CE1C32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4F7AV38H34;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F07B76F2F416A8600CE1C32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F07B77C2F416CC900CE1C32 /* Production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4F7AV38H34;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Resources/TEG-Ticket-App-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to scan ticket barcodes for venue entry.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to find nearby venues.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iggi.TEG-Ticket-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3F07B7702F416A8600CE1C32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F07B77C2F416CC900CE1C32 /* Production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4F7AV38H34;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Resources/TEG-Ticket-App-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to scan ticket barcodes for venue entry.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to find nearby venues.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iggi.TEG-Ticket-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F07B75E2F416A8400CE1C32 /* Build configuration list for PBXProject "TEG Ticket App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F07B76C2F416A8600CE1C32 /* Debug */,
+				3F07B76D2F416A8600CE1C32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F07B76E2F416A8600CE1C32 /* Build configuration list for PBXNativeTarget "TEG Ticket App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F07B76F2F416A8600CE1C32 /* Debug */,
+				3F07B7702F416A8600CE1C32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F07B75B2F416A8400CE1C32 /* Project object */;
+}
